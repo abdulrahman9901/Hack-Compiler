@@ -1,0 +1,64 @@
+    // std::ifstream file(infiles[0]);
+
+    // if (file.is_open()) {
+    //     std::string line;
+    //     while (std::getline(file, line)) {
+    //         if (!isComment(line)) {
+    //             std::string symbols = "{}()[].,;+-*/&|<>=~ ";
+    //             std::string token;
+    //             std::size_t pos = 0;
+
+    //             while (pos < line.length()) {
+    //                 if (symbols.find(line[pos]) != std::string::npos &&
+    //                     !std::isspace(line[pos])) {
+    //                     // Print the symbol as a separate token
+    //                     std::cout << "Token: " << line[pos] << std::endl;
+    //                     pos++;
+    //                 } else if (symbols.find(line[pos]) == std::string::npos
+    //                 &&
+    //                            !std::isspace(line[pos])) {
+    //                     token.clear();
+
+    //                     if (line[pos] == '"') {
+    //                         // Extract the string within double quotation
+    //                         marks token +=
+    //                             line[pos++]; // Add the opening quotation
+    //                             mark
+    //                         while (pos < line.length() && line[pos] != '"') {
+    //                             token += line[pos++];
+    //                         }
+    //                         if (pos < line.length() && line[pos] == '"') {
+    //                             token += line[pos++]; // Add the closing
+    //                                                   // quotation mark
+    //                         }
+    //                     } else {
+    //                         while (pos < line.length() &&
+    //                                symbols.find(line[pos]) ==
+    //                                    std::string::npos &&
+    //                                !std::isspace(line[pos])) {
+    //                             token += line[pos];
+    //                             pos++;
+    //                         }
+    //                     }
+
+    //                     // Trim the token to remove leading and trailing
+    //                     // spaces
+    //                     token.erase(0, token.find_first_not_of(' '));
+    //                     token.erase(token.find_last_not_of(' ') + 1);
+
+    //                     // Skip empty tokens or tokens consisting only of
+    //                     // spaces
+    //                     if (!token.empty()) {
+    //                         std::cout << "Token: " << token << std::endl;
+    //                     }
+    //                 } else {
+    //                     pos++; // Skip the space character
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     file.close();
+    // } else {
+    //     std::cout << "Failed to open the file." << std::endl;
+    // }
